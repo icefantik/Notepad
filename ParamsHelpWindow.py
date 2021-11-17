@@ -1,2 +1,2 @@
 helpWindowGeometry = "350x250"
-textHelpWindow = ""
+textHelpWindow = "Программу разработал Митюшин Пётр"
