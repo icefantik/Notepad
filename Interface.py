@@ -100,13 +100,14 @@ class Interfece(WorkOnFile):
     ENTRY_WIDTH = 0
     ENTRY_HEIGHT = 0
     def entryText(self):
-        """Функция создаёт поле для ввода на весь экран"""
+        """Функция создаёт поле для ввода текста на весь экран"""
         global text
         self.parseWinGeometry()
         text = Text(width=self.ENTRY_WIDTH, height=self.ENTRY_HEIGHT)
         text.pack()
 
     def parseWinGeometry(self):
+        """Функция достаёт параметра экрана"""
         geometry = self.WINDOW_GEOMETRY.split('x')
         self.ENTRY_WIDTH = int(geometry[0])
         self.ENTRY_HEIGHT = int(geometry[1])
