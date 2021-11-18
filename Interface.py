@@ -11,8 +11,6 @@ class WorkOnFile:
         global pathTextFile
         pathTextFile = filedialog.asksaveasfilename(initialdir="/", title="Select file",
                                                     filetypes=(("text files", "*.txt"), ("all files", "*.*")))
-        if (pathTextFile != ""):
-            text.delete("1.0", END)
         # Разбивает путь к текстовому файлу
         arrPath = pathTextFile.split('/')
         # Проверяем наличие расширения файла перед его созданием
