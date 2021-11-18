@@ -98,7 +98,7 @@ class Interface(WorkOnFile):
         helpWindow.geometry(ParamsHelpWindow.helpWindowGeometry)
         # Фиксирование размеров окна
         helpWindow.resizable(width=False, height=False)
-        Label(helpWindow, text=ParamsHelpWindow.textHelpWindow).place(x=0, y=3) # Текст в окне программы
+        Label(helpWindow, text=ParamsHelpWindow.textHelpWindow, width=45, height=0).place(x=0, y=0) # Текст в окне программы
         # Кнопка для выхода из окна о "О программе"
         Button(helpWindow, text="Ok", command=exitBtn, width=10, height=1).place(x=240, y=200)
 
